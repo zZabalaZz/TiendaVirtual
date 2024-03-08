@@ -8,4 +8,5 @@
     <string name="urlimagen">URL Imágen</string>
     <string name="msg_precio">Digite el Precio</string>
     <string name="msg_url">Digite el URL de la imagen</string>
+    <string name="btn_text">Ingresar</string>
 </resources>
