@@ -9,4 +9,7 @@
     <string name="msg_precio">Digite el Precio</string>
     <string name="msg_url">Digite el URL de la imagen</string>
     <string name="btn_text">Ingresar</string>
+    <string name="computador_asus">Computador ASUS</string>
+    <string name="_13_000_000_00">$ 13.000.000,00</string>
+    <string name="agregar">Agregar</string>
 </resources>
