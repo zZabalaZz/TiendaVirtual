@@ -7,7 +7,7 @@ public class Product {
     private String description;
 
 
-    private double price;
+    private Double price;
 
     public Product(String name, String description, double price, String urlImage) {
         this.name = name;
@@ -26,8 +26,12 @@ public class Product {
         return description;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public String getUrlImage() {
@@ -42,9 +46,7 @@ public class Product {
         this.description = description;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
 
     public void setUrlImage(String urlImage) {
         this.urlImage = urlImage;

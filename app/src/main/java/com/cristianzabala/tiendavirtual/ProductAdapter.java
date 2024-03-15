@@ -30,12 +30,12 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ProductAdapter.ViewHolder holder, int position) {
-
+        holder.associate(listObjects.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listObjects.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -50,6 +50,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             nameProduct = itemView.findViewById(R.id.tv_name_product_item);
             priceProduct = itemView.findViewById(R.id.tv_price_product_item);
 
+        }
+
+        public void associate(Product myproduct) {
+            nameProduct.setText(myproduct.getName());
+            priceProduct.setText(myproduct.getPrice().toString());
         }
     }
 }
